@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:8080/api/employee-benefits";
+const API = "https://symplifica-hr.onrender.com/api/employee-benefits";
 
 export interface EmployeeBenefit {
   id: string;
