@@ -106,7 +106,6 @@ import EmployeeCard from "../employees/EmployeeCard.vue";
 import { ref, onMounted, computed } from "vue";
 import { getEmployees } from "../../services/employeeService"; // Ajusta la ruta a tu estructura
 import {
-  Eye,
   Search,
   Plus,
 } from "lucide-vue-next";
@@ -168,13 +167,6 @@ const filteredEmployees = computed(() => {
 });
 
 // Función para ver el detalle del empleado
-function viewEmployee(id: string) {
-  const employee = employees.value.find(e => e.id === id);
-
-  if (employee) {
-    selectedEmployee.value = employee;
-  }
-}
 </script>
 
 <style scoped>

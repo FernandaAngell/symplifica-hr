@@ -83,7 +83,6 @@
 </template>
 
 <script setup lang="ts">
-import EmployeeCard from "../employees/EmployeeCard.vue";
 import { ref, onMounted, computed } from "vue";
 import { getEmployees } from "../../services/employeeService"; // Ajusta la ruta a tu estructura
 import {

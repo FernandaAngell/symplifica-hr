@@ -14,45 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
-import { getEmployees } from "../../services/employeeService";
 import EmployeeLocationMap from "../map/EmployeeLocationMap.vue";
-
-import {
-  LMap,
-  LTileLayer,
-  LMarker,
-  LPopup,
-} from "@vue-leaflet/vue-leaflet";
-
-import L from "leaflet";
-
-import "leaflet/dist/leaflet.css";
-
-import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
-import markerIcon from "leaflet/dist/images/marker-icon.png";
-import markerShadow from "leaflet/dist/images/marker-shadow.png";
-
-const zoom = ref(6);
-
-const center = ref<[number, number]>([
-  4.570868,
-  -74.297333,
-]);
-
-const employees = ref<any[]>([]);
-
-onMounted(async () => {
-  employees.value = await getEmployees();
-});
-
-delete (L.Icon.Default.prototype as any)._getIconUrl;
-
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
-});
 </script>
 
 <style scoped>
