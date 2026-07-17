@@ -61,6 +61,7 @@ public class EmployeeService {
 
         return EmployeeMapper.toResponse(employee);
     }
+    
     public EmployeeResponse update(UUID id, CreateEmployeeRequest request) {
 
     Employee employee = repository.findById(id)
@@ -73,6 +74,7 @@ public class EmployeeService {
     employee.setCity(request.getCity());
     employee.setPosition(request.getPosition());
 
+    try {
     NominatimResponse location = nominatimService.searchCity(request.getCity());
 
     if (location != null) {
@@ -80,6 +82,10 @@ public class EmployeeService {
         employee.setLongitude(new BigDecimal(location.getLon()));
         employee.setDisplayName(location.getDisplayName());
     }
+
+} catch (Exception e) {
+    System.out.println("No fue posible obtener la ubicación: " + e.getMessage());
+}
 
     employee = repository.save(employee);
 
