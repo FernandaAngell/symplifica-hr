@@ -109,7 +109,7 @@ Incluye endpoints para:
 
 ### Frontend
 
-https://symplifica-hr.vercel.app/dashboard
+https://symplifica-hr.vercel.app/login
 
 # 🚀 Backend API
 
@@ -119,6 +119,20 @@ Example endpoints:
 - https://symplifica-hr.onrender.com/api/benefits
   
 ---
+
+## 🔐 Credenciales de acceso
+
+Para acceder a la aplicación utiliza las siguientes credenciales:
+
+```text
+Usuario: admin
+Contraseña: admin123
+```
+
+Una vez autenticado podrás acceder al dashboard y gestionar empleados y beneficios.
+
+---
+
 
 # 📈 Mejoras futuras
 
