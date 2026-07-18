@@ -111,10 +111,13 @@ Incluye endpoints para:
 
 https://symplifica-hr.vercel.app/dashboard
 
-### Backend
+# 🚀 Backend API
 
-https://symplifica-hr.onrender.com
+Example endpoints:
 
+- https://symplifica-hr.onrender.com/api/employees
+- https://symplifica-hr.onrender.com/api/benefits
+  
 ---
 
 # 📈 Mejoras futuras
