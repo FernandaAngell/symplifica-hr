@@ -125,3 +125,11 @@ https://symplifica-hr.onrender.com
 - 📱 Diseño completamente responsive
 - 📊 Más indicadores para el dashboard
 - 🐳 Docker y Docker Compose
+
+---
+
+## 👩‍💻 Autor
+
+**Maria Fernanda Tolosa Angel**
+
+---
